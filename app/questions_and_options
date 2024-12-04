@@ -1,0 +1,45 @@
+{
+    "question": "Que prefieres?",
+    "answers": [
+        {
+            "option_blue": "Python",
+            "option_yellow": "JavaScript"
+        },
+        {
+            "option_blue": "Funciones como args de funciones",
+            "option_yellow": "Trabajar con funciones independientes"
+        },
+        {
+            "option_blue": "Programaci\u00f3n orientada a objetos",
+            "option_yellow": "Programaci\u00f3n funcional"
+        },
+        {
+            "option_blue": "Desarrollo en la terminal",
+            "option_yellow": "Desarrollo con un entorno gr\u00e1fico"
+        },
+        {
+            "option_blue": "Aprender a programar en Python",
+            "option_yellow": "Aprender a programar en C"
+        },
+        {
+            "option_blue": "C\u00f3digo limpio desde el principio",
+            "option_yellow": "Escribir r\u00e1pido y luego refactorizar"
+        },
+        {
+            "option_blue": "Documentar a medida que escribes",
+            "option_yellow": "Documentar el c\u00f3digo cuando finalizas"
+        },
+        {
+            "option_blue": "Escribir tus propios algoritmos",
+            "option_yellow": "Usar librer\u00edas existentes"
+        },
+        {
+            "option_blue": "Programaci\u00f3n en equipo",
+            "option_yellow": "Trabajo aut\u00f3nomo"
+        },
+        {
+            "option_blue": "Usar funciones lambda",
+            "option_yellow": "Usar funciones definidas con def"
+        }
+    ]
+}
