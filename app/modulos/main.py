@@ -5,7 +5,7 @@ from .variables import (
     SIZE_SCREEN, tittle_game, colors, triangles, current_color_voter, item_sound, music_sound
 )
 from .funciones import (
-    load_ranking, draw_screen
+    load_ranking, draw_screen, color_selection
 )
 from forms.form_manager import(
     FormManager
@@ -14,11 +14,13 @@ from .sonidos import Sound
 
 def run_game():
     pg.init()
-    sound_game = Sound
+    sound_game = Sound()
+    sound_game.play_music(music_sound)
+
     screen = pg.display.set_mode(SIZE_SCREEN)
     pg.display.set_caption(tittle_game)
 
-    ranking = load_ranking
+    ranking = load_ranking()
 
     forms = FormManager(screen, ranking)
     forms_mm = forms.forms[0]
@@ -33,14 +35,12 @@ def run_game():
     game_running = True
     while game_running:
         event_list = pg.event.get()
-        sound_game.play_music(music_sound)
 
         for event in event_list:
             if event.type == pg.QUIT:
                 game_running = False
 
         forms.update(event_list)
-        pg.display.update()
 
         if forms_mm.star_first_level:
             counter_yellow = 0

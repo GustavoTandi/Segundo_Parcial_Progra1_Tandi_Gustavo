@@ -11,11 +11,13 @@ class Form:
         self.y = y
         self.level_num = level_num
         self.music_path = music_path
+        self.active = active
 
     def set_active(self, name: str):
         for aux_form in self.form_dict.values():
             aux_form.active = False
         self.form_dict[name].active = True
+        #print(self.form_dict[name])
 
     def music_update(self):
         pg.mixer.music.stop()

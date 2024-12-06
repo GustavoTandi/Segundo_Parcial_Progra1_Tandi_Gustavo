@@ -18,7 +18,7 @@ class FormRanking(Form):
         self.confirm_name = True
 
         self.ranking_on_screen = []
-        self.ranking_list = ranking_list()
+        self.ranking_list = []
 
 
 

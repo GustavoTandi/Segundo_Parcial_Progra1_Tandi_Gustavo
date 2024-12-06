@@ -17,11 +17,11 @@ class FormManager:
 
     def forms_update(self, event_list: list):
     
-        if self.forms[0].set_active:
+        if self.forms[0].active:
             self.forms[0].update()
             self.forms[0].draw()
         
-        elif self.forms[1].set_active:
+        elif self.forms[1].active:
             self.forms[1].update()
             self.forms[1].draw()
 

@@ -1,7 +1,8 @@
 import json
 import pygame as pg
+import random
 from .variables import (
-    PREGUNTA_CONSTANTE, answer_blue, answer_yellow, RANKING_ROUTE
+    PREGUNTA_CONSTANTE, answer_blue, answer_yellow, RANKING_ROUTE, colors
 )
 from .auxiliares import(
     draw_options, draw_people, draw_posters, draw_scenery, show_text, draw_scores, draw_podiums
@@ -69,3 +70,10 @@ def sort_matrix(matrix: list[list]):
         for j in range(i+1, len(matrix)):
             if int(matrix[i][1]) < int(matrix[j][1]):
                 matrix[i], matrix[j] = matrix[j], matrix[i]
+
+def color_selection(color_uno, color_dos) -> tuple[int, int]:
+    '''
+    Elige un color de dos posibles de forma aleatoria 
+    '''
+    color = random.choice([color_uno, color_dos])
+    return colors[color]
